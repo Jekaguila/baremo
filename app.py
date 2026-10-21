@@ -69,10 +69,10 @@ LETRAS = "ABCD"
 # =============================================================================== utilidades
 def password_docente():
     try:
-        v = st.secrets.get("ADMIN_PASSWORD")
+        v = st.secrets.get("12345678")
     except Exception:
         v = None
-    return v or os.environ.get("ADMIN_PASSWORD")
+    return v or os.environ.get("12345678")
 
 
 def limite_intento(intento, intentos_est, cfg):
